@@ -7,4 +7,7 @@ function generateKeyPair() {
     return keyPair;
 }
 
+function signMessage(message, privateKey){
+    
+}
 
