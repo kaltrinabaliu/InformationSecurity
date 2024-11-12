@@ -22,8 +22,9 @@ function signMessage(message, privateKey){
 //function to create a qr code
 async function createQRCode(data, filePath) {
     try {
-        
+        await QRCode.toFile(filePath, data);
+        console.log('QR Code created at:', filePath);
     } catch (err) {
-       
+        console.error('Error creating QR Code:', err);
     }
 }
