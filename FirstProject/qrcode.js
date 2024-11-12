@@ -19,3 +19,6 @@ function signMessage(message, privateKey){
     return Buffer.from(signature).toString('hex');
 }
 
+async function createQRCode(data, filePath) {
+   
+}
