@@ -12,7 +12,7 @@ Njomza Rexhepi
 Blerim Rexha:  profesori i lëndës,
 Mergim Hoti: asistent.
 
-#Projekti 1: Gjenerimi i QR Code me Nënshkrime Digjitale Duke Përdorur EdDSA
+# Projekti 1: Gjenerimi i QR Code me Nënshkrime Digjitale Duke Përdorur EdDSA
 
 
 Ky projekt tregon gjenerimin e një kodi QR me nënshkrime digjitale duke përdorur algoritmin EdDSA (Edwards-curve Digital Signature Algorithm) në Java. Projekti thekson implementimin e teknikave kriptografike për të siguruar autenticitetin dhe integritetin e kodit QR, i cili shpesh përdoret në sisteme të sigurt komunikimi dhe verifikimi të identitetit.
