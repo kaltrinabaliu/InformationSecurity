@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Group and Artifact IDs to define your project -->
+  <groupId>InformationSecurity</groupId>
+  <artifactId>InformationSecurity</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <!-- Dependencies for the project -->
+  <dependencies>
+    <!-- Bouncy Castle for cryptographic functions -->
+    <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15on</artifactId>
+        <version>1.70</version>
+    </dependency>
+    
+    <!-- ZXing for QR code generation -->
+    <dependency>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>core</artifactId>
+        <version>3.4.1</version>
+    </dependency>
+    
+    <!-- ZXing Javase (for desktop applications) -->
+    <dependency>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>javase</artifactId>
+        <version>3.4.1</version>
+    </dependency>
+  </dependencies>
+
+  <!-- Build configuration for the project -->
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <!-- Maven Compiler Plugin to compile code with the specified Java version -->
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <!-- Change to a more widely supported version if you encounter issues with Java 22 -->
+          <release>17</release>  <!-- Use Java 17 or 11 here, depending on your JDK version -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
