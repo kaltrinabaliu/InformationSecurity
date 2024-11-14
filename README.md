@@ -5,8 +5,8 @@ Ky repository përmban një koleksion projektesh për lëndën e Sigurisë së I
 # Autoret
 Ky projekt është realizuar nga tre studente të Fakultetit të Inxhinierisë Elektrike dhe Kompjuterike (FIEK) në Universitetin e Prishtinës:
 
-Ereblina Berisha, 
-Kaltrina Baliu dhe
+Erëblina Berisha, 
+Kaltrinë Baliu dhe
 Njomza Rexhepi
 
 Blerim Rexha:  profesori i lëndës,
