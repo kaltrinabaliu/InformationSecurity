@@ -39,4 +39,9 @@ public class QRCode {
 		signature.update(message.getBytes());
 		return signature.sign();
 	    }
+
+	
+    private static void createQRCode(String data, String filePath) throws WriterException, IOException {
+    
+    }
 }
