@@ -28,4 +28,10 @@ public class QRCode {
         // Mesazhi për të cilin do të nënshkruajmë
         String message = "Pershendetje!";
         
-      }}
+      }
+
+	 private static byte[] signMessage(String message, java.security.PrivateKey privateKey) throws Exception {
+	        Signature signature = Signature.getInstance("EdDSA");
+	       
+	    }
+}
