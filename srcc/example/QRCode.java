@@ -42,6 +42,11 @@ public class QRCode {
 
 	
     private static void createQRCode(String data, String filePath) throws WriterException, IOException {
-    
+        QRCodeWriter qrCodeWriter = new QRCodeWriter();
+        BitMatrix bitMatrix = qrCodeWriter.encode(data, BarcodeFormat.QR_CODE, 200, 200);
+
+        File qrCodeFile = new File(filePath);
+        ImageIO.write(MatrixToImageWriter.toBufferedImage(bitMatrix), "PNG", qrCodeFile);
+        System.out.println("QR Code i krijuar në: " + qrCodeFile.getAbsolutePath());
     }
 }
