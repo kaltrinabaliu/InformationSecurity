@@ -32,6 +32,8 @@ public class QRCode {
 
 	 private static byte[] signMessage(String message, java.security.PrivateKey privateKey) throws Exception {
 	        Signature signature = Signature.getInstance("EdDSA");
-	       
+	        signature.initSign(privateKey);
+	        signature.update(message.getBytes());
+	        return signature.sign();
 	    }
 }
