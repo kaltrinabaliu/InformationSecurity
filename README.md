@@ -18,7 +18,7 @@ Mergim Hoti: asistent.
 Ky projekt tregon gjenerimin e një kodi QR me nënshkrime digjitale duke përdorur algoritmin EdDSA (Edwards-curve Digital Signature Algorithm) në Java. Projekti thekson implementimin e teknikave kriptografike për të siguruar autenticitetin dhe integritetin e kodit QR, i cili shpesh përdoret në sisteme të sigurt komunikimi dhe verifikimi të identitetit.
 
 # EdDSA
-EdDSA (Edwards-curve Digital Signature Algorithm) is a modern and secure digital signature algorithm based on performance-optimized elliptic curves, such as the 255-bit curve Curve25519 and the 448-bit curve Curve448-Goldilocks. The EdDSA signatures use the Edwards form of the elliptic curves (for performance reasons), respectively edwards25519 and edwards448. The EdDSA algorithm is based on the Schnorr signature algorithm and relies on the difficulty of the ECDLP problem.
+EdDSA (Edwards-curve Digital Signature Algorithm) është një algoritëm modern dhe të sigurt për nënshkrime digjitale, i bazuar në kurba eliptike të optimizuara për performancë, siç janë kurba 255-bit Curve25519 dhe 448-bit Curve448-Goldilocks. Nënshkrimet EdDSA përdorin formën Edwards të kurbave eliptike (për arsye performancë), përkatësisht edwards25519 dhe edwards448. Algoritmi EdDSA bazohet në algoritmin e nënshkrimit Schnorr dhe mbështetet në vështirësinë e problemit ECDLP (Elliptic Curve Discrete Logarithm Problem).
 
 
 
