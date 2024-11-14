@@ -27,13 +27,16 @@ public class QRCode {
 
         // Mesazhi për të cilin do të nënshkruajmë
         String message = "Pershendetje!";
+
+	// Nënshkruaj mesazhin me qeles privat
+        byte[] signature = signMessage(message, keyPair.getPrivate());
         
       }
 
 	 private static byte[] signMessage(String message, java.security.PrivateKey privateKey) throws Exception {
-	        Signature signature = Signature.getInstance("EdDSA");
-	        signature.initSign(privateKey);
-	        signature.update(message.getBytes());
-	        return signature.sign();
+		Signature signature = Signature.getInstance("EdDSA");
+		signature.initSign(privateKey);
+		signature.update(message.getBytes());
+		return signature.sign();
 	    }
 }
