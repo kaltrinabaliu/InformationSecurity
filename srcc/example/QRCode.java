@@ -18,35 +18,39 @@ import java.io.IOException;
 public class QRCode {
 
 	public static void main(String[] args) throws Exception {
-		 // Shto Bouncy Castle si provider
-        Security.addProvider(new BouncyCastleProvider());
+		 
+       	    Security.addProvider(new BouncyCastleProvider());
 
-        // Krijo çelësin privat dhe publik
-        KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("EdDSA");
-        KeyPair keyPair = keyPairGenerator.generateKeyPair();
+        
+            KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("EdDSA");
+            KeyPair keyPair = keyPairGenerator.generateKeyPair();
 
-        // Mesazhi për të cilin do të nënshkruajmë
-        String message = "Pershendetje!";
+        
+            String message = "Pershendetje!";
 
-	// Nënshkruaj mesazhin me qeles privat
-        byte[] signature = signMessage(message, keyPair.getPrivate());
+	
+            byte[] signature = signMessage(message, keyPair.getPrivate());
+
+	    createQRCode(message + " | Signature: " + Hex.toHexString(signature), "QRCode.png");
+
         
       }
 
-	 private static byte[] signMessage(String message, java.security.PrivateKey privateKey) throws Exception {
-		Signature signature = Signature.getInstance("EdDSA");
-		signature.initSign(privateKey);
-		signature.update(message.getBytes());
-		return signature.sign();
-	    }
+       private static byte[] signMessage(String message, java.security.PrivateKey privateKey) throws Exception {
+	    Signature signature = Signature.getInstance("EdDSA");
+	    signature.initSign(privateKey);
+	    signature.update(message.getBytes());
+	    return signature.sign();
+	    
+       }
 
 	
-    private static void createQRCode(String data, String filePath) throws WriterException, IOException {
-        QRCodeWriter qrCodeWriter = new QRCodeWriter();
-        BitMatrix bitMatrix = qrCodeWriter.encode(data, BarcodeFormat.QR_CODE, 200, 200);
+       private static void createQRCode(String data, String filePath) throws WriterException, IOException {
+           QRCodeWriter qrCodeWriter = new QRCodeWriter();
+           BitMatrix bitMatrix = qrCodeWriter.encode(data, BarcodeFormat.QR_CODE, 200, 200);
 
-        File qrCodeFile = new File(filePath);
-        ImageIO.write(MatrixToImageWriter.toBufferedImage(bitMatrix), "PNG", qrCodeFile);
-        System.out.println("QR Code i krijuar në: " + qrCodeFile.getAbsolutePath());
+           File qrCodeFile = new File(filePath);
+           ImageIO.write(MatrixToImageWriter.toBufferedImage(bitMatrix), "PNG", qrCodeFile);
+           System.out.println("QR Code i krijuar në: " + qrCodeFile.getAbsolutePath());
     }
 }
