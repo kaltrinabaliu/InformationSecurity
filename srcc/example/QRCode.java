@@ -26,7 +26,7 @@ public class QRCode {
             KeyPair keyPair = keyPairGenerator.generateKeyPair();
 
         
-            String message = "Pershendetje!";
+            String message = "Pershendetje, nga grupi 7 lenda Siguria e informacionit- FIEK!";
 
 	
             byte[] signature = signMessage(message, keyPair.getPrivate());
