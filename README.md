@@ -1,19 +1,13 @@
-# Information Security Projects - Semester Repository
+# Repository për lëndën "Sigurina e Informacionit"  
 
-Ky repository përmban një koleksion projektesh për lëndën e Sigurisë së Informacionit.
+Ky repository përmban një projektet për lëndën e Sigurisë së Informacionit - FIEK  - Universiteti i Prishtines "Hasan Prishtina" profesori i lendes Prof.Dr.Blerim Rexha,  asistenti i lendes Dr. Sc.Mërgim Hoti.
 
-# Autoret
-Ky projekt është realizuar nga tre studente të Fakultetit të Inxhinierisë Elektrike dhe Kompjuterike (FIEK) në Universitetin e Prishtinës:
-
+# Autorët
 Erëblina Berisha, 
 Kaltrinë Baliu dhe
 Njomza Rexhepi
 
-Blerim Rexha:  profesori i lëndës,
-Mergim Hoti: asistent.
-
 # Projekti 1: Gjenerimi i QR Code me Nënshkrime Digjitale Duke Përdorur EdDSA
-
 
 Ky projekt tregon gjenerimin e një kodi QR me nënshkrime digjitale duke përdorur algoritmin EdDSA (Edwards-curve Digital Signature Algorithm) në Java. Projekti thekson implementimin e teknikave kriptografike për të siguruar autenticitetin dhe integritetin e kodit QR, i cili shpesh përdoret në sisteme të sigurt komunikimi dhe verifikimi të identitetit.
 
