@@ -1,6 +1,6 @@
 # Repository për lëndën "Sigurina e Informacionit"  
 
-Ky repository përmban një projektet për lëndën e Sigurisë së Informacionit - FIEK  - Universiteti i Prishtines "Hasan Prishtina" profesori i lendes Prof.Dr.Blerim Rexha,  asistenti i lendes Dr. Sc.Mërgim Hoti.
+Ky repository përmban një projekt për lëndën e Sigurisë së Informacionit - FIEK, Universiteti i Prishtinës "Hasan Prishtina". Profesori i lëndës është Prof. Dr. Blerim Rexha, ndërsa asistenti është Dr. Sc. Mërgim Hoti.
 
 # Autorët
 Erëblina Berisha, 
