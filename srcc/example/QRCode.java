@@ -30,21 +30,19 @@ public class QRCode {
 
 	    // Sign the message using the private key
             byte[] signature = signMessage(message, keyPair.getPrivate());
+		
             // Create a QR code containing the message and its signature
 	    createQRCode(message + " | Signature: " + Hex.toHexString(signature), "QRCode.png");
-
-        
-      }
+       }
        //Method to sign a message using a private key
        private static byte[] signMessage(String message, java.security.PrivateKey privateKey) throws Exception {
 	    Signature signature = Signature.getInstance("EdDSA");
 	    signature.initSign(privateKey);
 	    signature.update(message.getBytes());
 	    return signature.sign();
-	    
        }
 
-       // Method to create a QR code from the given data and save it to a file
+       // Method to generate a QR code from the given data and save it as an image file
        private static void createQRCode(String data, String filePath) throws WriterException, IOException {
            QRCodeWriter qrCodeWriter = new QRCodeWriter();
            BitMatrix bitMatrix = qrCodeWriter.encode(data, BarcodeFormat.QR_CODE, 200, 200);
@@ -52,5 +50,5 @@ public class QRCode {
            File qrCodeFile = new File(filePath);
            ImageIO.write(MatrixToImageWriter.toBufferedImage(bitMatrix), "PNG", qrCodeFile);
            System.out.println("QR Code i krijuar në: " + qrCodeFile.getAbsolutePath());
-    }
+       }
 }
