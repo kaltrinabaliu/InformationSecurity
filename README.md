@@ -50,7 +50,7 @@ ImageIO
 Përdorimi: Ofrohet nga Java për të lexuar dhe shkruar formate të ndryshme imazhesh (p.sh., PNG, JPEG).
 Pse përdoret: Në këtë rast, përdoret për të ruajtur imazhin QR-kod në disk si skedar.
 
-#Si te behet run ky aplikacion:
+# Si te behet run ky aplikacion:
 Fillimisht duhet te keni te instaluar Eclipse dhe Java ne versionin e fundit, instalimi i librarive te larte permendura.
 
 Pasi qe ta beni run aplikacionin do te gjenerohet  QRCode.png si ne foton me poshte.
