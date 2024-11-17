@@ -23,32 +23,32 @@ EdDSA: Një skemë moderne e nënshkrimit bazuar në kurba eliptike, e njohur p�
 Gjenerimi i QR Code: Biblioteka për gjenerimin dhe kodimin e kodeve QR që do të mbajnë të dhënat e nënshkruara.
 
 
-Libraritë: 
-BouncyCastle:
+# Libraritë e përdorura: 
+BouncyCastle</br>
 BouncyCastle është një bibliotekë për kriptografinë dhe sigurinë. Këto klasa ofrojnë mbështetje për funksionalitete të avancuara kriptografike, duke përfshirë:
 Gjenerimin e çelësave (KeyPair).
 Algoritmet e nënshkrimit (Signatures).
 Kodim/enkodim (p.sh., Hex për të kthyer të dhënat binare në format heksadecimal).
 
-java.security:
+java.security</br>
 Ofrojnë funksione themelore për operacionet kriptografike si:
 Gjenerimi i çelësave publikë dhe privatë.
 Menaxhimi i nënshkrimeve dixhitale.
 Konfigurimi i ofruesve të sigurisë (p.sh., shtimi i BouncyCastle si provider).
 
-ZXing:
+ZXing</br>
 ZXing (Zebra Crossing) është një bibliotekë për krijimin dhe leximin e kodeve bardhezi, përfshirë QR-kodet.
 QRCodeWriter: Gjeneron QR-kode në formën e matricave binare.
 BitMatrix: Struktura që përfaqëson QR-kodin në mënyrë digjitale.
 MatrixToImageWriter: Kthen matricën binare në një imazh (p.sh., PNG).
 
 
-javax.imageio
-ImageIO
+javax.imageio</br>
+ImageIO</br>
 Përdorimi: Ofrohet nga Java për të lexuar dhe shkruar formate të ndryshme imazhesh (p.sh., PNG, JPEG).
 Pse përdoret: Në këtë rast, përdoret për të ruajtur imazhin QR-kod në disk si skedar.
 
-# Si te behet run ky aplikacion:
+# Si të ekzekutoni aplikacionin:
 Fillimisht duhet të keni të instaluar Eclipse dhe Java në versionin e fundit, instalimi i librarive të lartë përmendura.
 
 Pasi që të ekzekutoni aplikacionin përkatës do të gjenerohet QRCode.png si në foton më poshtë.
