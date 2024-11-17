@@ -1,16 +1,9 @@
 package example;
-// Importing necessary libraries
-// Bouncy Castle library security provider
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
-// Used for Encoding data in Hex format
 import org.bouncycastle.util.encoders.Hex;
-//Used for ecurity-related operations
 import java.security.Security;
-//Used for holding a pair of keys (public and private)
 import java.security.KeyPair;
-//Used for generating key pairs
 import java.security.KeyPairGenerator;
-//Used for signing data
 import java.security.Signature;
 import java.util.HashMap;
 import java.util.Map;
