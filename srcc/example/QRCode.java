@@ -18,15 +18,14 @@ import java.io.IOException;
 public class QRCode {
 
 	public static void main(String[] args) throws Exception {
-	   // Adding Bouncy Castle as a security provider
-
+	    // Add Bouncy Castle as a security provider for cryptographic algorithms
        	    Security.addProvider(new BouncyCastleProvider());
 
-            // Generating a new key pair using EdDSA algorithm
+            // Generate a key pair using the EdDSA algorithm
             KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("EdDSA");
             KeyPair keyPair = keyPairGenerator.generateKeyPair();
 
-           // Message to be signed and encoded in the QR code
+            // Define the message to be signed and encoded in the QR code
             String message = "Pershendetje, nga grupi 7 lenda Siguria e informacionit- FIEK!";
 
 	    // Sign the message using the private key
