@@ -7,21 +7,13 @@ import java.security.KeyPairGenerator;
 import java.security.Signature;
 import java.util.HashMap;
 import java.util.Map;
-// Used for specifying the format of the barcode
 import com.google.zxing.BarcodeFormat;
-// Exception for writing errors
 import com.google.zxing.WriterException;
-// Used for converting BitMatrix to image
 import com.google.zxing.client.j2se.MatrixToImageWriter;
-// Used for the QR code matrix
 import com.google.zxing.common.BitMatrix;
-// Used for generating QR codes
 import com.google.zxing.qrcode.QRCodeWriter;
-// Used for image input/output
 import javax.imageio.ImageIO;
-// Used for file handling
 import java.io.File;
-// Used for handling IO exceptions
 import java.io.IOException;
 public class QRCode {
 
